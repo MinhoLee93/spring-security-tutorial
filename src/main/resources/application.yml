@@ -3,3 +3,11 @@ spring:
     user:
       name: minholee93
       password: minholee93
+server:
+  port: 443
+  ssl:
+    enabled: true
+    key-store: src/main/resources/bootsecurity.p12
+    key-store-password: minholee93
+    key-store-type: PKCS12
+    key-alias: bootsecurity
