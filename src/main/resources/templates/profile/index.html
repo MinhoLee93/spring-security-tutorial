@@ -6,6 +6,16 @@
 <!-- Page content goes here -->
 <div class="container">
     <p>This is User Profile\Index. Only authenticated people can see this</p>
+    <table>
+        <tr>
+            <td>Username</td>
+            <td><span sec:authentication="name"></span></td>
+        </tr>
+        <tr>
+            <td>Authorities</td>
+            <td><span sec:authentication="principal.authorities"></span></td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
